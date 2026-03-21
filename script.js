@@ -2,28 +2,23 @@
 // Initialize AOS (Animate On Scroll)
 // ================================
 AOS.init({
-    duration: 600,
+    duration: 700,
     easing: 'ease-out-cubic',
     once: true,
-    offset: 50,
+    offset: 80,
 });
 
 // ================================
 // Navbar Scroll Effect
 // ================================
 const navbar = document.getElementById('navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 50) {
+    if (window.pageYOffset > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
 });
 
 // ================================
@@ -76,101 +71,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ================================
-// Mission Cards Hover Effect
+// Subtle Parallax on Hero
+// ================================
+const heroVisual = document.querySelector('.hero-visual');
+const heroBackground = document.querySelector('.hero-background');
+
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    
+    if (scrolled < 800) {
+        if (heroVisual) {
+            heroVisual.style.transform = `translateY(${scrolled * 0.1}px)`;
+        }
+        if (heroBackground) {
+            heroBackground.style.transform = `translateY(${scrolled * 0.15}px)`;
+        }
+    }
+});
+
+// ================================
+// Mission Items Interaction
 // ================================
 const missionItems = document.querySelectorAll('.mission-item');
 
 missionItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
-        item.style.transform = 'translateX(8px)';
+        item.style.transform = 'translateX(4px)';
     });
     
     item.addEventListener('mouseleave', () => {
         item.style.transform = 'translateX(0)';
     });
 });
-
-// ================================
-// Parallax Effect on Scroll (Subtle)
-// ================================
-const heroVisual = document.querySelector('.hero-visual');
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const rate = scrolled * 0.3;
-    
-    if (heroVisual && scrolled < 600) {
-        heroVisual.style.transform = `translateY(${rate}px)`;
-    }
-});
-
-// ================================
-// Button Ripple Effect
-// ================================
-const buttons = document.querySelectorAll('.btn');
-
-buttons.forEach(button => {
-    button.addEventListener('click', function(e) {
-        const ripple = document.createElement('span');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-        
-        ripple.style.cssText = `
-            position: absolute;
-            width: ${size}px;
-            height: ${size}px;
-            left: ${x}px;
-            top: ${y}px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            transform: scale(0);
-            animation: ripple 0.6s ease-out;
-            pointer-events: none;
-        `;
-        
-        this.style.position = 'relative';
-        this.style.overflow = 'hidden';
-        this.appendChild(ripple);
-        
-        setTimeout(() => ripple.remove(), 600);
-    });
-});
-
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes ripple {
-        to {
-            transform: scale(2);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
-
-// ================================
-// Intersection Observer for Section Animations
-// ================================
-const sections = document.querySelectorAll('section');
-
-const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, {
-    threshold: 0.1
-});
-
-sections.forEach(section => {
-    sectionObserver.observe(section);
-});
-
-// ================================
-// Console Easter Egg
-// ================================
-console.log('%c⚔️ QUEST', 'font-size: 24px; font-weight: bold; color: #4A7BF7;');
-console.log('%cTurn ideas into Missions that get done.', 'font-size: 14px; color: #1E3A5F;');
-console.log('%cInterested in joining the adventure? Visit our site!', 'font-size: 12px; color: #94A3B8;');
