@@ -1,1 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEST — Turn Ideas into Missions</title>
+    <meta name="description" content="QUEST helps teams turn ideas into clear, actionable missions. Plan smarter, assign tasks instantly, and get things done together.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-icon.PNG" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo-icon.PNG" alt="QUEST Logo">
+                <span>QUEST</span>
+            </a>
+            <a href="https://script.google.com/macros/s/AKfycbzC-Z52g2r41AF5Uu3ritGRV96YPB_LfRRF-WrHFSeSqNZACNCgpPoTn3kDJh565tt7/exec" class="nav-cta">
+                Start Your Quest ⚔️
+            </a>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-headline">
+                    Turn ideas into<br><span class="gradient-text">Missions that get done.</span>
+                </h1>
+                <p class="hero-subheadline">
+                    Plan smarter, assign instantly, and execute together with your Squad — without the chaos.
+                </p>
+                
+                <div class="hero-vocab">
+                    <div class="vocab-item">
+                        <span class="vocab-old">Projects</span>
+                        <span class="vocab-arrow">→</span>
+                        <span class="vocab-new">Quests ⚔️</span>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="vocab-old">Tasks</span>
+                        <span class="vocab-arrow">→</span>
+                        <span class="vocab-new">Missions</span>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="vocab-old">Teams</span>
+                        <span class="vocab-arrow">→</span>
+                        <span class="vocab-new">Squads</span>
+                    </div>
+                </div>
+                
+                <p class="hero-subtext">Because getting things done should feel clear — and a little more fun.</p>
+                
+                <div class="hero-ctas">
+                    <a href="https://script.google.com/macros/s/AKfycbzC-Z52g2r41AF5Uu3ritGRV96YPB_LfRRF-WrHFSeSqNZACNCgpPoTn3kDJh565tt7/exec" class="btn btn-primary">
+                        Start Your First Quest ⚔️
+                    </a>
+                    <button class="btn btn-secondary" id="watchDemoBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                <div class="missions-card">
+                    <div class="missions-header">
+                        <span class="missions-title">🎯 Today's Missions</span>
+                    </div>
+                    <div class="mission-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="mission-icon">⚔️</div>
+                        <div class="mission-content">
+                            <span class="mission-name">Design slides</span>
+                            <span class="mission-assignee">Assigned to: Sarah</span>
+                        </div>
+                        <div class="mission-status status-progress"></div>
+                    </div>
+                    <div class="mission-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="mission-icon">⚔️</div>
+                        <div class="mission-content">
+                            <span class="mission-name">Contact speakers</span>
+                            <span class="mission-assignee">Assigned to: David</span>
+                        </div>
+                        <div class="mission-status status-pending"></div>
+                    </div>
+                    <div class="mission-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="mission-icon">⚔️</div>
+                        <div class="mission-content">
+                            <span class="mission-name">Book venue</span>
+                            <span class="mission-assignee">Assigned to: Emma</span>
+                        </div>
+                        <div class="mission-status status-done"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 class="section-headline" data-aos="fade-up">
+                Plans are easy. <span class="gradient-text">Execution is messy.</span>
+            </h2>
+            <div class="problem-grid">
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="problem-emoji">💬</div>
+                    <p>Tasks get lost in group chats</p>
+                </div>
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="problem-emoji">🤷</div>
+                    <p>No one knows who owns what</p>
+                </div>
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="problem-emoji">🔄</div>
+                    <p>Priorities keep changing</p>
+                </div>
+                <div class="problem-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="problem-emoji">😓</div>
+                    <p>One person ends up doing everything</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <h2 class="section-headline" data-aos="fade-up">Meet QUEST</h2>
+            <p class="section-subheadline" data-aos="fade-up" data-aos-delay="100">
+                QUEST turns your ideas into clear, actionable <span class="highlight">Missions</span> your Squad can execute together.
+            </p>
+            
+            <div class="solution-flow" data-aos="fade-up" data-aos-delay="200">
+                <div class="flow-step">
+                    <span class="flow-icon">💡</span>
+                    <span class="flow-label">Idea</span>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                        <path d="M0 12H36M36 12L26 4M36 12L26 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <span class="flow-icon">⚔️</span>
+                    <span class="flow-label">Quests</span>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                        <path d="M0 12H36M36 12L26 4M36 12L26 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <span class="flow-icon">🎯</span>
+                    <span class="flow-label">Missions</span>
+                </div>
+                <div class="flow-arrow">
+                    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+                        <path d="M0 12H36M36 12L26 4M36 12L26 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <span class="flow-icon">✅</span>
+                    <span class="flow-label">Done</span>
+                </div>
+            </div>
+            
+            <div class="solution-image" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/app-dashboard.png" alt="QUEST Dashboard">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-headline" data-aos="fade-up">Everything you need to execute</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI Mission Planning</h3>
+                    <p class="feature-description">
+                        Turn any idea into a structured plan with role-based Missions assigned in seconds.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Squad Collaboration</h3>
+                    <p class="feature-description">
+                        Assign Missions, track progress, and keep your entire Squad aligned.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Simple & Enjoyable</h3>
+                    <p class="feature-description">
+                        No complicated tools. Just clear execution that actually feels good to use.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-headline" data-aos="fade-up">From idea to execution in seconds</h2>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Describe your idea</h3>
+                    <p class="step-description">Tell QUEST what you want to accomplish</p>
+                </div>
+                <div class="step-connector" data-aos="fade-up" data-aos-delay="150">
+                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12H56M56 12L46 4M56 12L46 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">QUEST generates Missions</h3>
+                    <p class="step-description">AI breaks it down into actionable tasks</p>
+                </div>
+                <div class="step-connector" data-aos="fade-up" data-aos-delay="250">
+                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none">
+                        <path d="M0 12H56M56 12L46 4M56 12L46 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Your Squad executes</h3>
+                    <p class="step-description">Everyone knows exactly what to do</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases" id="use-cases">
+        <div class="container">
+            <h2 class="section-headline" data-aos="fade-up">Built for real-life Squads</h2>
+            <div class="use-cases-grid">
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="use-case-icon">📚</div>
+                    <h3 class="use-case-title">Group Projects</h3>
+                    <p class="use-case-description">Ace that team assignment without the drama</p>
+                </div>
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="use-case-icon">🚀</div>
+                    <h3 class="use-case-title">Startup Teams</h3>
+                    <p class="use-case-description">Move fast without losing track</p>
+                </div>
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="use-case-icon">🎉</div>
+                    <h3 class="use-case-title">Event Planning</h3>
+                    <p class="use-case-description">Coordinate every detail seamlessly</p>
+                </div>
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="use-case-icon">✈️</div>
+                    <h3 class="use-case-title">Trips with Friends</h3>
+                    <p class="use-case-description">Plan adventures, not arguments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="final-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-headline">Ready to start your Quest?</h2>
+                <p class="cta-subheadline">Join teams already turning chaos into clarity.</p>
+                <a href="https://script.google.com/macros/s/AKfycbzC-Z52g2r41AF5Uu3ritGRV96YPB_LfRRF-WrHFSeSqNZACNCgpPoTn3kDJh565tt7/exec" class="btn btn-primary btn-large">
+                    Start Your First Quest ⚔️
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-icon.PNG" alt="QUEST Logo">
+                    <span>QUEST</span>
+                </div>
+                <p class="footer-tagline">Turn ideas into Missions that get done.</p>
+                <p class="footer-copyright">© 2024 QUEST. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="video-container">
+                <iframe 
+                    id="demoVideo"
+                    src="" 
+                    width="100%" 
+                    height="100%" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
