@@ -310,6 +310,22 @@ a {
     flex-wrap: wrap;
 }
 
+/* Hero Screenshot */
+.hero-screenshot {
+    max-width: 420px;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero-screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Missions Card */
 .hero-visual {
     display: flex;
@@ -922,6 +938,11 @@ a {
    Responsive Design
 ================================ */
 @media (max-width: 1024px) {
+
+   .hero-screenshot {
+    max-width: 360px;
+    margin: 0 auto;
+    }
     .hero-headline {
         font-size: 3rem;
     }
@@ -997,6 +1018,9 @@ a {
 }
 
 @media (max-width: 768px) {
+    .hero-screenshot {
+    max-width: 320px;
+    }
     .hero {
         padding-top: 120px;
         min-height: auto;
