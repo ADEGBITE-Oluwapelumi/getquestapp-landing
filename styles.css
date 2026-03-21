@@ -193,20 +193,11 @@ a {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 0.625rem;
 }
 
-.nav-logo-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-sm);
-}
-
-.nav-logo-text {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: var(--color-gray-900);
-    letter-spacing: -0.01em;
+.nav-logo-full {
+    height: 44px;
+    width: auto;
 }
 
 .nav-cta {
@@ -1042,8 +1033,8 @@ a {
         font-size: 1.75rem;
     }
     
-    .nav-logo-text {
-        display: none;
+    .nav-logo-full {
+        height: 36px;
     }
     
     .nav-cta {
