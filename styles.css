@@ -840,8 +840,8 @@ a {
 }
 
 .footer-logo img {
-    width: 32px;
-    height: 32px;
+    height: 38px;
+    max-width: 150px;
     border-radius: var(--radius-sm);
 }
 
